@@ -5,6 +5,7 @@ import 'package:flutter_demos/snackbar/snackbar_demo_1.dart';
 import 'package:flutter_demos/snackbar/snackbar_demo_2.dart';
 import 'package:flutter_demos/state_management/counter_screen.dart';
 
+import 'drawer/appdrawer_demo.dart';
 import 'onboarding/onboarding_1/onboardingscreen.dart';
 
 void main() {
@@ -29,4 +30,11 @@ void main() {
 
   //CounterScreen State Management
   //runApp(CounterScreen());
+
+  //App Drawer Demo
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    theme: ThemeData(primarySwatch: Colors.indigo),
+    home: AppDrawerDemo(),
+  ));
 }
